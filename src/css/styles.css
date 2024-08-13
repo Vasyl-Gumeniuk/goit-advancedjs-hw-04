@@ -64,7 +64,8 @@ a {
   color: #808080;
 }
 
-.form-btn {
+.form-btn,
+.load-more {
   font-family: var(--font-family);
   font-weight: 500;
   font-size: 16px;
@@ -78,7 +79,8 @@ a {
   background: #4e75ff;
 }
 
-.form-btn:hover {
+.form-btn:hover,
+.load-more:hover {
   background: #6c8cff;
 }
 /* #endregion Form */
@@ -90,7 +92,7 @@ a {
   column-gap: 24px;
   row-gap: 24px;
   padding: 0 156px;
-  margin-bottom: 36px;
+  margin-bottom: 32px;
 }
 .gallery-card {
   max-width: 360px;
@@ -235,3 +237,17 @@ a {
   display: none;
 }
 /* #endregion Loader */
+
+/* #region Load More Button */
+.load-more {
+  display: block;
+  margin: 0 auto;
+  width: 126px;
+  margin-bottom: 44px;
+  transition: opacity 250ms linear;
+}
+
+.load-more.is-hidden {
+  display: none;
+}
+/* #endregion Load More Button */
